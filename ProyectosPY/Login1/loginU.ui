@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainWindow</class>
+ <widget class="QMainWindow" name="mainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1400</width>
+    <height>794</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1200</width>
+    <height>794</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1400</width>
+    <height>794</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>RecFace</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">*{
+	font-family:century gothic;
+	font-size:40
+}
+
+
+QFrame{
+	background: transparent;
+	border-width: 2px;
+	border-radius:15px;
+  	border-style: solid;
+	border-color: white;
+}
+
+#btningresar{
+	background: transparent;
+ 	border-style: solid;
+	border-color: white;
+	border-width: 2px;
+	border-radius:8px;
+	font-size:18px;
+
+}
+
+#pushButton_2{
+	background: transparent;
+	border-radius:60px;
+
+
+}
+QLabel{
+background:0A2732;
+color:white;
+font-size: 30px;
+
+}
+
+QPushButton{
+	color:white;
+}
+
+QPushButton{
+	color:white;
+}
+#btningresar:hover{
+		background:black;
+		border-style: solid;
+		border-color: white;
+		border-width: 2px;
+		color:red;
+}
+
+#usuario{
+
+	font-size:18px;
+	border-radius:4px;
+	
+
+
+}
+
+#password{
+
+	font-size:18px;
+	border-radius:4px;
+	
+
+
+}
+#textEdit{
+
+	font-size:18px;
+	background:transparent;
+	border-radius:transparent;
+	color:white;
+
+}
+
+#inicia{
+	
+border:transparent;
+color:white;
+font-size:40px;
+font-family: arial;
+}
+
+
+#inicia_2{
+	
+border:transparent;
+color:white;
+font-size:13px;
+}
+
+
+#inicia_3{
+	
+border:transparent;
+color:white;
+font-size:13px;
+}
+
+#error{
+	background: #DA1515;
+    border-radius:8px;
+	font-size:16px;
+
+}
+
+#errorbtn{
+	background: transparent;
+    border-radius:4px;
+	font-size:16px;
+
+	border-style: solid;
+    border-color: white;
+	border-width: 1px;
+	border-radius:8px;
+}
+
+#errorbtn:hover{
+	background: black;
+    border-radius:4px;
+	font-size:16px;
+	border-style: solid;
+    border-color: black;
+	border-width: 1px;
+	border-radius:8px;
+}
+</string>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>140</y>
+      <width>451</width>
+      <height>471</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="btningresar">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>390</y>
+       <width>391</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>INGRESAR</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="usuario">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>150</y>
+       <width>341</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="mouseTracking">
+      <bool>true</bool>
+     </property>
+     <property name="acceptDrops">
+      <bool>true</bool>
+     </property>
+     <property name="inputMask">
+      <string/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="dragEnabled">
+      <bool>true</bool>
+     </property>
+     <property name="readOnly">
+      <bool>false</bool>
+     </property>
+     <property name="placeholderText">
+      <string>Usuario</string>
+     </property>
+     <property name="clearButtonEnabled">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="password">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>230</y>
+       <width>341</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="mouseTracking">
+      <bool>true</bool>
+     </property>
+     <property name="acceptDrops">
+      <bool>true</bool>
+     </property>
+     <property name="inputMask">
+      <string/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="dragEnabled">
+      <bool>true</bool>
+     </property>
+     <property name="readOnly">
+      <bool>false</bool>
+     </property>
+     <property name="placeholderText">
+      <string>Contraseña</string>
+     </property>
+     <property name="clearButtonEnabled">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="inicia">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>70</y>
+       <width>321</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>INICIAR SESION</string>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="inicia_2">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>330</y>
+       <width>141</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Recordar Contraseña</string>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox">
+     <property name="geometry">
+      <rect>
+       <x>39</x>
+       <y>340</y>
+       <width>21</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="inicia_3">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>330</y>
+       <width>251</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Olvidaste la Contraseña?</string>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QToolButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>30</y>
+      <width>241</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>INICIA SESION</string>
+    </property>
+    <property name="icon">
+     <iconset resource="iconos/imagenes.qrc">
+      <normaloff>:/logos/umbrella.png</normaloff>:/logos/umbrella.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>400</width>
+      <height>600</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="error">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>660</y>
+      <width>451</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Usuario o Contraseña Incorrecta</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="errorbtn">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>670</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>X</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>14</width>
+      <height>16</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="fondo">
+    <property name="geometry">
+     <rect>
+      <x>-30</x>
+      <y>-250</y>
+      <width>1451</width>
+      <height>1051</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="iconos/imagenes.qrc">
+      <normaloff>:/logos/umbrellafondo.jpg</normaloff>:/logos/umbrellafondo.jpg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>3000</width>
+      <height>1200</height>
+     </size>
+    </property>
+   </widget>
+   <zorder>fondo</zorder>
+   <zorder>frame</zorder>
+   <zorder>pushButton_2</zorder>
+   <zorder>error</zorder>
+   <zorder>errorbtn</zorder>
+  </widget>
+ </widget>
+ <resources>
+  <include location="iconos/imagenes.qrc"/>
+ </resources>
+ <connections/>
+</ui>

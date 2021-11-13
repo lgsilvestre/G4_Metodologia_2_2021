@@ -1,0 +1,10 @@
+<RCC>
+  <qresource prefix="logos">
+    <file>umbrellafondo.jpg</file>
+    <file>umbrella.png</file>
+    <file>umbrellalogo.png</file>
+    <file>camera.png</file>
+    <file>fondo2.jpg</file>
+    <file>recfacial.png</file>
+  </qresource>
+</RCC>
