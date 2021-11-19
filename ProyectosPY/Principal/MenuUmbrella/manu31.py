@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'C:\ProyectosPY\MenuUmbrella\menu3.0.ui'
+# Form implementation generated from reading ui file 'C:\Users\Nicolas\Desktop\ProyectosPY\Principal\MenuUmbrella\menu3.1.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.4
 #
@@ -14,7 +14,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(1124, 782)
+        MainWindow.resize(1124, 799)
         MainWindow.setStyleSheet("*{\n"
 "\n"
 "    border:none;\n"
@@ -27,7 +27,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout.setSpacing(0)
         self.horizontalLayout.setObjectName("horizontalLayout")
         self.menuslide = QtWidgets.QFrame(self.centralwidget)
-        self.menuslide.setMinimumSize(QtCore.QSize(0, 0))
+        self.menuslide.setMinimumSize(QtCore.QSize(280, 0))
         self.menuslide.setMaximumSize(QtCore.QSize(0, 16777215))
         font = QtGui.QFont()
         font.setPointSize(9)
@@ -66,13 +66,13 @@ class Ui_MainWindow(object):
         icon = QtGui.QIcon()
         icon.addPixmap(QtGui.QPixmap(":/iconos/umbrella.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_12.setIcon(icon)
-        self.pushButton_12.setIconSize(QtCore.QSize(48, 40))
+        self.pushButton_12.setIconSize(QtCore.QSize(65, 40))
         self.pushButton_12.setObjectName("pushButton_12")
         self.horizontalLayout_9.addWidget(self.pushButton_12, 0, QtCore.Qt.AlignLeft)
         self.label_2 = QtWidgets.QLabel(self.frame_7)
         font = QtGui.QFont()
         font.setFamily("Gill Sans MT")
-        font.setPointSize(16)
+        font.setPointSize(14)
         font.setBold(True)
         font.setItalic(False)
         font.setWeight(75)
@@ -127,6 +127,7 @@ class Ui_MainWindow(object):
 "    border-top: 2px solid red;\n"
 "    font-size:20px;\n"
 "\n"
+"\n"
 "}\n"
 "\n"
 "\n"
@@ -169,13 +170,6 @@ class Ui_MainWindow(object):
         self.verticalLayout_14.setContentsMargins(0, 50, 0, 0)
         self.verticalLayout_14.setSpacing(0)
         self.verticalLayout_14.setObjectName("verticalLayout_14")
-        self.textEdit_5 = QtWidgets.QTextEdit(self.frame_15)
-        self.textEdit_5.setStyleSheet("QTextEdit{\n"
-"\n"
-"color:white;\n"
-"}")
-        self.textEdit_5.setObjectName("textEdit_5")
-        self.verticalLayout_14.addWidget(self.textEdit_5)
         self.verticalLayout_6.addWidget(self.frame_15)
         self.verticalLayout_5.addWidget(self.frame_8)
         self.frame_9 = QtWidgets.QFrame(self.slide)
@@ -389,6 +383,16 @@ class Ui_MainWindow(object):
         self.frame_13.setObjectName("frame_13")
         self.verticalLayout_11 = QtWidgets.QVBoxLayout(self.frame_13)
         self.verticalLayout_11.setObjectName("verticalLayout_11")
+        self.FrameCamara = QtWidgets.QFrame(self.frame_13)
+        self.FrameCamara.setMinimumSize(QtCore.QSize(300, 300))
+        self.FrameCamara.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.FrameCamara.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.FrameCamara.setObjectName("FrameCamara")
+        self.pushButton_13 = QtWidgets.QPushButton(self.FrameCamara)
+        self.pushButton_13.setGeometry(QtCore.QRect(70, 260, 75, 23))
+        self.pushButton_13.setAutoFillBackground(False)
+        self.pushButton_13.setObjectName("pushButton_13")
+        self.verticalLayout_11.addWidget(self.FrameCamara)
         self.textEdit_3 = QtWidgets.QTextEdit(self.frame_13)
         self.textEdit_3.setStyleSheet("color:white;")
         self.textEdit_3.setObjectName("textEdit_3")
@@ -490,6 +494,39 @@ class Ui_MainWindow(object):
         self.stackedWidget.setCurrentIndex(1)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.label_2.setText(_translate("MainWindow", "UMBRELLA S.A"))
+        self.pushButton_4.setText(_translate("MainWindow", "RASTREO FACIAL"))
+        self.pushButton_10.setText(_translate("MainWindow", "RECONOCIMIENTO FACIAL"))
+        self.pushButton_9.setText(_translate("MainWindow", "  AJUSTES"))
+        self.pushButton_6.setText(_translate("MainWindow", "PushButton"))
+        self.pushButton_11.setText(_translate("MainWindow", "Bienvenido a RecFace"))
+        self.textEdit_2.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'Gill Sans MT\'; font-size:12pt; font-weight:400; font-style:normal;\">\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:14pt;\">RecFace es una aplicacion para poder detectar el reconocimiento facial en tiempo real</span></p></body></html>"))
+        self.pushButton_13.setText(_translate("MainWindow", "PushButton"))
+        self.textEdit_3.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">Aqui iria la camara</span></p></body></html>"))
+        self.textEdit_4.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">Aqui iria los algoritmos</span></p></body></html>"))
+        self.textEdit.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:7.8pt;\">pagina 2</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:7.8pt;\"><br /></p></body></html>"))
+        self.pushButton_8.setText(_translate("MainWindow", "Umbrella S.A"))
+
 
 
         # activar textos al pasar el mouse por los botones
@@ -549,48 +586,19 @@ class Ui_MainWindow(object):
         cv.destroyAllWindows()
 
 
-     
 
 
-    def retranslateUi(self, MainWindow):
-        _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.label_2.setText(_translate("MainWindow", "UMBRELLA S.A"))
-        self.pushButton_4.setText(_translate("MainWindow", "RASTREO FACIAL"))
-        self.pushButton_10.setText(_translate("MainWindow", "RECONOCIMIENTO FACIAL"))
-        self.textEdit_5.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:7.8pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">DESCRIPCION DE </p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">RASTREO FACIAL</p></body></html>"))
-        self.pushButton_9.setText(_translate("MainWindow", "  AJUSTES"))
-        self.pushButton_6.setText(_translate("MainWindow", "PushButton"))
-        self.pushButton_11.setText(_translate("MainWindow", "Bienvenido a RecFace"))
-        self.textEdit_2.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'Gill Sans MT\'; font-size:12pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:14pt;\">RecFace es una aplicacion para poder detectar el reconocimiento facial en tiempo real</span></p></body></html>"))
-        self.textEdit_3.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:7.8pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">Aqui iria la camara</span></p></body></html>"))
-        self.textEdit_4.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:7.8pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">Aqui iria los algoritmos</span></p></body></html>"))
-        self.textEdit.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:7.8pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">pagina 2</p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
-        self.pushButton_8.setText(_translate("MainWindow", "Umbrella S.A"))
+
 import Recursos.iconos
 
+
+
+
+
+
+
+
+#----------------------------
 
 if __name__ == "__main__":
     import sys

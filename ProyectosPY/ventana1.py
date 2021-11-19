@@ -2,7 +2,7 @@ import sys
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-from Principal.MenuUmbrella.menuumbrella import Ui_MainWindow
+from Principal.MenuUmbrella.manu31 import Ui_MainWindow
 
 class Ui_mainWindow(object):
     def setupUi(self, mainWindow):
