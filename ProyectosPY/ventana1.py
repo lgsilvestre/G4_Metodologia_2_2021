@@ -2,7 +2,7 @@ import sys
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-from Principal.MenuUmbrella.menuumbrella import Ui_MainWindow
+from Principal.MenuUmbrella.menu5 import Ui_MainWindow
 
 class Ui_mainWindow(object):
     def setupUi(self, mainWindow):
@@ -232,7 +232,6 @@ class Ui_mainWindow(object):
         self.error.setText(_translate("mainWindow", "Usuario o Contraseña Incorrecta"))
         self.errorbtn.setText(_translate("mainWindow", "X"))
 import Recursos.imagenes
-
 
 if __name__ == "__main__":
     import sys
