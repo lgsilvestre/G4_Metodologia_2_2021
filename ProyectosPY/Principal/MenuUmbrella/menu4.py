@@ -21,7 +21,7 @@ import cv2 as cv
 from PyQt5.uic import loadUi
 from PyQt5.QtGui import QImage, QPixmap
 from PyQt5.QtWidgets import QDialog , QApplication, QFrame
-from PyQt5.QtCore import QTimer
+from PyQt5.QtCore import QTimer, Qt
 
 
 faceClassif = cv2.CascadeClassifier("C:\\Python38\\Lib\\site-packages\\cv2\\data\\haarcascade_frontalface_default.xml")
@@ -630,17 +630,12 @@ class Ui_MainWindow(object):
         #cerrar el programa con la X
         self.pushButton_3.clicked.connect(lambda: exit())
 
-
-
-
         #funcion para deslizar el menu
 
     def deslizarmenu(self):
 
         ancho = self.menuslide.width()
        
-
-
         if ancho == 0:
                 anchonuevo = 280
         else:
@@ -652,11 +647,8 @@ class Ui_MainWindow(object):
         self.animation.setEndValue(anchonuevo)
         self.animation.setEasingCurve(QtCore.QEasingCurve.InOutQuart)
         self.animation.start()
-
-        
+   
         #Funcion para llamar a la camara
-
-
 
         # se crea un timer
         self.timer = QTimer()
@@ -666,9 +658,8 @@ class Ui_MainWindow(object):
         self.pushButton_15.clicked.connect(self.controlTimer)
 
     def viewCam(self):
-        # se lee en BRGs
+        # se lee en BGRs
         ret, image = self.cap.read()
-      
         # se transgorma a RGB
         image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
         # se obtiene la informacion de la imagen
@@ -681,14 +672,12 @@ class Ui_MainWindow(object):
         gray = cv2.cvtColor(image , cv2.COLOR_BGR2GRAY)    
        
         faces = faceClassif.detectMultiScale(gray, 1.5, 1)  
-      
+        
         for(x, y, w, h) in faces:
                image =  cv2.rectangle(image, (x, y), (x + w, y + h ), (0, 255, 0), 2)
-
-       
-       
         
         qImg = QImage(image.data, width, height, step, QImage.Format_RGB888)
+        
         # se muestra en el label
       
         self.label_camara_1.setPixmap(QPixmap.fromImage(qImg))
@@ -696,8 +685,7 @@ class Ui_MainWindow(object):
     
     def controlTimer(self):
         
-        if not self.timer.isActive():
-           
+        if not self.timer.isActive():      
             self.cap = cv2.VideoCapture(0)
             self.timer.start(20)
             self.pushButton_15.setText("STOP")
@@ -707,10 +695,6 @@ class Ui_MainWindow(object):
             self.cap.release()
             self.pushButton_15.setText("START")
 	 
-
-
-
-
 
 import Recursos.iconos_menu
 
