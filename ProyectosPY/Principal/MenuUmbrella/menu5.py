@@ -22,7 +22,7 @@ from PyQt5.QtGui import QImage, QPixmap
 from PyQt5.QtWidgets import QDialog , QApplication, QFrame
 from PyQt5.QtCore import QTimer, Qt
 
-faceClassif = cv2.CascadeClassifier("C:\\Users\\nicol\\Desktop\\GitKraken\\Moleculator2\\G4_Metodologia_2_2021\\ProyectosPY\\Recursos\\haarcascade_frontalface_default.xml")
+faceClassif = cv2.CascadeClassifier("C:\\Users\\Nicolas\\Desktop\\dddd\\ProyectosPY\\Recursos\\haarcascade_frontalface_default.xml")
 
 
 class Ui_MainWindow(object):
